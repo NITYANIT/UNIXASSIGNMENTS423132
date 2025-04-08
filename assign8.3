@@ -1,0 +1,15 @@
+💥 Step 3: Run the Program to Create a Crash
+Create a crash in your code (example: divide by 0 or segmentation fault):
+
+crash_program.c
+
+#include <stdio.h>
+
+int main() {
+    int *ptr = NULL;
+    *ptr = 5;  // Causes segmentation fault
+    return 0;
+}
+Run it:
+
+./crash_program
