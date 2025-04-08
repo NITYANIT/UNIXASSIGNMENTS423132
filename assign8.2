@@ -1,0 +1,14 @@
+🧨 Step 2: Enable Core Dumps (if not already)
+Check current core dump limit:
+
+
+ulimit -c
+Set it to unlimited (just for this session):
+
+ulimit -c unlimited
+To make it permanent, add this to ~/.bashrc:
+
+ulimit -c unlimited
+Also check core dump location:
+
+cat /proc/sys/kernel/core_pattern
